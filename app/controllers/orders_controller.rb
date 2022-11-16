@@ -1,8 +1,20 @@
 class OrdersController < ApplicationController
+  def items
+    orderlist ||= LineItem.where("order_id = ?", params[:id] )
+    @items = {}
+    orderlist.each do |order|
+      @items[order.product_id] = order.quantity
+    end
+    return @items
+    # raise @items.inspect
+  end
 
   def show
     @order = Order.find(params[:id])
-    @line_items = LineItem.where(order_id:[:id])
+    # raise items[6].inspect
+    @line_items ||= Product.where(id: items.keys).map {|product| { product:product, quantity: items[product.id] } }
+    # @line_items ||= LineItem.where("order_id = ?", params[:id] ).map {|product| { product:product, quantity: order[product.id.to_s] } }
+    # @line_items ||= Product.where(id: cart.keys).map {|product| { product:product, quantity: cart[product.id.to_s] } }
   end
 
   def create
