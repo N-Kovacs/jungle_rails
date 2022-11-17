@@ -31,6 +31,7 @@
             data-bs-toggle="dropdown"
             aria-expanded="false"
           > %>
+
           <li class="nav-item end-0">
           <%= link_to about_index_path, class: "nav-link " do %> 
           About Us <% end %>
@@ -52,12 +53,12 @@
 
     <% if current_user %>
     <li class="navbar-email"> Logged in as: <%= current_user.email %> </li>
-    <li class="nav-item">     <%= link_to 'logout', class: "nav-link " do %> 
+    <li class="nav-item">     <%= link_to '/logout', class: "nav-link " do %> 
     Log out <% end %> </li>
     <% else %>
-    <li class="nav-item">     <%= link_to 'login', class: "nav-link " do %> 
+    <li class="nav-item">     <%= link_to '/login', class: "nav-link " do %> 
     Log in <% end %> </li>
-    <li class="nav-item">     <%= link_to 'signup', class: "nav-link " do %> 
+    <li class="nav-item">     <%= link_to '/signup', class: "nav-link " do %> 
     Sign up <% end %> </li>
     <% end %>
 
