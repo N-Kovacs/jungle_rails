@@ -31,8 +31,13 @@
             data-bs-toggle="dropdown"
             aria-expanded="false"
           > %>
+          <li class="nav-item end-0">
+          <%= link_to about_index_path, class: "nav-link " do %> 
+          About Us <% end %>
+          </li>
             <%# Categories %>
           <%# </a>
+
           <ul class="dropdown-menu dropdown-menu-dark" aria-labelledby="navbarDropdown"> %>
             <% Category.all.each do |category| %>
             <li class="nav-item">
@@ -46,7 +51,7 @@
 
 
     <% if current_user %>
-    <li> Signed in as <%= current_user.email %> </li>
+    <li class="navbar-email"> Logged in as: <%= current_user.email %> </li>
     <li class="nav-item">     <%= link_to 'logout', class: "nav-link " do %> 
     Log out <% end %> </li>
     <% else %>
@@ -55,10 +60,7 @@
     <li class="nav-item">     <%= link_to 'signup', class: "nav-link " do %> 
     Sign up <% end %> </li>
     <% end %>
-    <li class="nav-item end-0">
-    <%= link_to about_index_path, class: "nav-link " do %> 
-    About Us <% end %>
-    </li>
+
         <li class="nav-item dropdown">
           <a
             class="nav-link dropdown-toggle text-danger"
