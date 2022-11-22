@@ -1,6 +1,5 @@
 require 'database_cleaner/active_record'
 DatabaseCleaner.strategy = :truncation
-puts "read?"
 return unless Rails.env.test?
 
 CypressRails.hooks.before_server_start do
