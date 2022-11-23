@@ -1,15 +1,18 @@
 # Jungle
 
-A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.
-
 ## Features
-Basic ecommerce site built in rails as a part of Lighthouse Labs learning. Features include viewing, adding to cart, and exploring products. Admin features include adding new products and categories. 
+Basic e-commerce site built in rails as a part of Lighthouse Labs learning. Features include viewing, adding to cart, and exploring products. Admin features include adding new products and categories. 
 
 ## Images
+### Homepage Layout
 !["Screenshot of homepage layout"](https://github.com/N-Kovacs/jungle_rails/blob/master/docs/Homepage.png?raw=true)
+### Products Homepage
 !["Screenshot of products homepage layout"](https://github.com/N-Kovacs/jungle_rails/blob/master/docs/Homepage%202.png?raw=true)
+### Cart
 !["Screenshot of cart"](https://github.com/N-Kovacs/jungle_rails/blob/master/docs/Cart.png?raw=true)
+### Admin Controls
 !["Screenshot of admin controls"](https://github.com/N-Kovacs/jungle_rails/blob/master/docs/Admin.png?raw=true)
+### Order Screen
 !["Screenshot of successful order"](https://github.com/N-Kovacs/jungle_rails/blob/master/docs/Order.png?raw=true)
 
 
