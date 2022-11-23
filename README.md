@@ -2,6 +2,17 @@
 
 A mini e-commerce application built with Rails 6.1 for purposes of teaching Rails by example.
 
+## Features
+Basic ecommerce site built in rails as a part of Lighthouse Labs learning. Features include viewing, adding to cart, and exploring products. Admin features include adding new products and categories. 
+
+## Images
+!["Screenshot of homepage layout"](https://github.com/N-Kovacs/jungle_rails/blob/master/docs/Homepage.png?raw=true)
+!["Screenshot of products homepage layout"](https://github.com/N-Kovacs/jungle_rails/blob/master/docs/Homepage%202.png?raw=true)
+!["Screenshot of cart"](https://github.com/N-Kovacs/jungle_rails/blob/master/docs/Cart.png?raw=true)
+!["Screenshot of admin controls"](https://github.com/N-Kovacs/jungle_rails/blob/master/docs/Admin.png?raw=true)
+!["Screenshot of successful order"](https://github.com/N-Kovacs/jungle_rails/blob/master/docs/Order.png?raw=true)
+
+
 ## Setup
 
 1. Run `bundle install` to install dependencies
